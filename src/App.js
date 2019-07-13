@@ -1,4 +1,11 @@
 import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container'
+
+import Header from 'components/layout/header/Header'
+import Results from 'components/sections/results/Results'
+import Schedule from 'components/sections/schedule/Schedule'
+import Meals from 'components/sections/meals/Meals'
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -6,13 +13,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Header />
+        <Container>
+          <Results></Results>
+          <Schedule></Schedule>
+          <Meals></Meals>
+
+        </Container>
+
       </div>
     );
   }
