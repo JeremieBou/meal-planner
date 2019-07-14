@@ -13,8 +13,8 @@ export default class Meals extends React.Component {
             <h1>Meals</h1>
           </Col>
         </Row>
-        <Row>
-          <Col>
+        <Row className="justify-content-md-center">
+          <Col md="8">
             <h2>Breakfast</h2>
             <Table>
               <thead>
